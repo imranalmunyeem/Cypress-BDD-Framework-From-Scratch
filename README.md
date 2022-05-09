@@ -14,7 +14,8 @@
            ---> Run below command to get the test format, plugins, and other necessary things.
                       npx cypress open
            
-           ---> Run "npm install --save-dev cypress-cucumber-preprocessor" to install Cucumber.
+           ---> Run below command to install Cucumber.
+                      npm install --save-dev cypress-cucumber-preprocessor
            
            ---> Add the below commands to "cypress/plugins/index.js"
                       const cucumber = require('cypress-cucumber-preprocessor').default
