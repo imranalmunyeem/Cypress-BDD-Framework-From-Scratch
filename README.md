@@ -9,9 +9,15 @@
            
            ---> Run "npm install cypress" to install cypress
                 
-           ---> "Run "npx cypress open" to get the test format, plugins, and other necessary things.
+           ---> Run "npx cypress open" to get the test format, plugins, and other necessary things.
            
-           ---> 
+           ---> Run "npm install --save-dev cypress-cucumber-preprocessor" to install Cucumber.
+           
+           ---> Add this to "cypress/plugins/index.js"
+                      "const cucumber = require('cypress-cucumber-preprocessor').default
+                      module.exports = (on, config) => {
+                      on('file:preprocessor', cucumber())
+                      }
 
 ### Help + Testing
 The steps below will show how you can run and test this project.
